@@ -27,8 +27,7 @@ cryptography
 colorama
 
 # Data Processing
-# Python package. The system C library alone does not provide `import talib`.
-TA-Lib
+#TA-LIB
 pandas
 numpy
 scipy
