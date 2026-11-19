@@ -49,8 +49,8 @@ class CustomInstall(install):
                 print(f"\n------------------------------------------------------")
                 print(f"Platform {platform} detected. installing TA-Lib.")
                 print("------------------------------------------------------\n")
-                url = "https://github.com/ta-lib/ta-lib/releases/download/v0.6.4/ta-lib_0.6.4_amd64.deb"
-                file_name = "ta-lib_0.6.4_amd64.deb"
+                url = "https://github.com/TA-Lib/ta-lib/releases/download/v0.8.3/ta-lib_0.8.3_amd64.deb"
+                file_name = "ta-lib_0.8.3_amd64.deb"
                 try:
                     print(f"Downloading {url}...")
                     urllib.request.urlretrieve(url, file_name)
@@ -65,12 +65,12 @@ class CustomInstall(install):
                     print("pip install TA-Lib")
 
 def get_version():
-    version_file = os.path.abspath("bitunix_automated_crypto_trading/version.py")
+    version_file = os.path.abspath("reflexevolve/version.py")
     with open(version_file) as f:
         return re.search(r'__version__ = "(.*?)"', f.read()).group(1)
 
 setup(
-    name="bitunix_automated_crypto_trading",
+    name="reflex-evolve",
     version=get_version(),   #Dynamically fetch version
     license="MIT",
     author="Lynxx1748",
