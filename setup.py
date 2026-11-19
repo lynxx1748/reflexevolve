@@ -73,11 +73,11 @@ setup(
     name="bitunix_automated_crypto_trading",
     version=get_version(),   #Dynamically fetch version
     license="MIT",
-    orignal author="tcj2001",
     author="Lynxx1748",
+    orignal author="tcj2001",
     author_email="lynxx1748@gmail.com",
-    description="Bitunix Futures Auto Trading Framework",
-    url="https://github.com/lynxx1748/bitunix-automated-crypto-trading",
+    description="Bitunix Auto Trading Framework for Futures Market",
+    url="https://github.com/lynxx1748/reflexevolve",
     packages=find_packages(),
 
     classifiers=[
