@@ -1,0 +1,22 @@
+.chart-body { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 20px; /* Space between the columns */
+} 
+
+.chart-area {
+    height: 100%; /* Let the grid adapt naturally */
+    position: relative; /* Position relative for absolute children */
+    pointer-events: auto;
+    overflow: hidden;
+    aspect-ratio: 1; /* Ensure square shape */
+    display: flex; /* Enable flexbox for modal content */
+    flex-direction: column; /* Stack children vertically */
+}
+.chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1005; /* Ensure it is above the chart area */
+}
+

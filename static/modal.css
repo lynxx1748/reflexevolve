@@ -1,0 +1,117 @@
+  .scrollable-view {
+    height: 80%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 20px;
+  }
+  
+  .fixed-view{
+    height: 80%;
+    margin-bottom: 20px;
+  }
+
+
+  .modal-overlay {
+    display: none; /* Hidden initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .modal-overlay.modal-open { /* Only show overlay when modal is active */
+    display: block;
+  }
+  
+  .modal-open {
+    display: block;
+  }
+  
+  .modal-container { /* Added container for positioning */
+    width: 100%;
+    height: 100%; /* Set height equal to the screen width */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Allow clicks to pass through when hidden */
+  }
+  
+  .modal {
+    width: min(1100px, 92vw);
+    height: min(820px, 88vh);
+    padding: 18px 20px;
+    background-color: #fff;
+    border: 1px solid #d7dee8;
+    border-radius: 16px;
+    box-shadow: 0 18px 50px rgba(27, 36, 48, 0.18);
+    resize: none;
+    pointer-events: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #close-modal {
+    align-self: flex-end;
+    width: auto;
+  }
+
+  .modal h1 {
+    margin: 0;
+    font-size: 22px;
+  }
+
+  #config-table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  #config-table th,
+  #config-table td {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .modal form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .modal input {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 10px;
+    border: 1px solid #d7dee8;
+    border-radius: 8px;
+  }
+
+  #log-container {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 12.5px;
+    line-height: 1.55;
+    white-space: pre-wrap;
+  }
+  
+  .modal .resize-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    cursor: nwse-resize; /* Change cursor to indicate resizing */
+  }
+  
+  .resize-top-right { top: 0; right: 0; cursor: nesw-resize; }
+  .resize-bottom-right { bottom: 0; right: 0; cursor: nwse-resize; }
+  .resize-bottom-left { bottom: 0; left: 0; cursor: nesw-resize; }
+  .resize-top-left { top: 0; left: 0; cursor: nwse-resize; }
+
+
+  
