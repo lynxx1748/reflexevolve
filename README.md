@@ -1,6 +1,9 @@
-# Bitunix Futures Auto Trading Platform
+# Bitunix Futures Auto Trading Framework
 
-A real-time cryptocurrency trading platform built with FastAPI and WebSocket technology using Bitunix API and websockets for Futures. The platform provides automated trading capabilities, real-time market data visualization, and portfolio management features.
+<img width="2493" height="1358" alt="Screenshot from 2026-11-19 18-06-40" src="https://github.com/user-attachments/assets/751ff31c-a6c9-440f-bd19-7cd51884cec6" />
+
+
+A real-time cryptocurrency trading platform built with FastAPI and WebSocket technology using Bitunix API and websockets for Futures Market. The platform provides automated trading capabilities, real-time market data visualization, and portfolio management features.
 
 Supports running the app in multiple instances (bots) with each instance having its own configuration file and env file containing the API keys and other parameters. 
 
