@@ -27,7 +27,7 @@ cryptography
 colorama
 
 # Data Processing
-#TA-LIB
+ta-lib
 pandas
 numpy
 scipy
