@@ -233,8 +233,8 @@ The platform can be configured through the `config.py` file or `config.txt`. Key
     - python -m pip install --upgrade pip
     - pip install https://github.com/cgohlke/talib-build/releases/download/v0.8.3/ta_lib-0.8.3-cp313-cp313-win_amd64.whl
   - change the tags/3.2.2 to the latest version in the script below and run it
-    - wget https://github.com/tcj2001/bitunix-automated-crypto-trading/archive/refs/tags/3.2.2.zip
-    - unzip zip file and copy the content inside C:\bitunix\Ver1.0.zip\bitunix-automated-crypto-trading-Ver1.0 to c:\bitunix
+    - wget https://github.com/lynxx1748/reflexevolve/archive/refs/tags/v3.2.2.zip
+    - unzip zip file and copy the content inside C:\bitunix\v3.2.2.zip\reflexevolve-v3.2.2 to c:\bitunix
   - pip install -r requirements.txt 
   - Make sure ta-lib is installed
     - python -c "import talib; print(talib.get_functions());"
@@ -262,8 +262,8 @@ The platform can be configured through the `config.py` file or `config.txt`. Key
     User=root
     Restart=always
     RestartSec=15
-    ExecStart=/usr/bin/python3 /home/tcj2001/bitunix/code/bitunix.py
-    WorkingDirectory=/home/tcj2001/bitunix/code
+    ExecStart=/usr/bin/python3 /home/reflexevolve/bitunix/code/bitunix.py
+    WorkingDirectory=/home/reflexevolve/bitunix/code
 
     [Install]
     WantedBy=multi-user.target
